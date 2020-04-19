@@ -8,31 +8,31 @@ background: linear-gradient(339deg, rgba(255,255,255,1) 0%, rgba(255,202,212,1) 
 }
 @font-face {
   font-family: "palanquin";
-  src: url("../assets/fonts/Palanquin-Regular.ttf");
+  src: url("./assets/fonts/Palanquin-Regular.ttf");
 }
 @font-face {
   font-family: "palanquin-extralight";
-  src: url("../assets/fonts/Palanquin-ExtraLight.ttf");
+  src: url("./assets/fonts/Palanquin-ExtraLight.ttf");
 }
 @font-face {
   font-family: "palanquin-light";
-  src: url("../assets/fonts/Palanquin-Light.ttf");
+  src: url("./assets/fonts/Palanquin-Light.ttf");
 }
 @font-face {
   font-family: "palanquin-thin";
-  src: url("../assets/fonts/Palanquin-Thin.ttf");
+  src: url("./assets/fonts/Palanquin-Thin.ttf");
 }
 @font-face {
   font-family: "palanquin-medium";
-  src: url("../assets/fonts/Palanquin-Medium.ttf");
+  src: url("./assets/fonts/Palanquin-Medium.ttf");
 }
 @font-face {
   font-family: "palanquin-semibold";
-  src: url("../assets/fonts/Palanquin-SemiBold.ttf");
+  src: url("./assets/fonts/Palanquin-SemiBold.ttf");
 }
 @font-face {
   font-family: "palanquin-bold";
-  src: url("../assets/fonts/Palanquin-Bold.ttf");
+  src: url("./assets/fonts/Palanquin-Bold.ttf");
 }
 
 .light {
