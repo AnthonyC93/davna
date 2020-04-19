@@ -1,0 +1,122 @@
+$lightblue: #6fb7ff;
+$purple: #b062ff;
+$background: #222222;
+body {
+  height: 100vh;
+  //   height: 100%;
+  //   p {
+  font-family: "palanquin", sans-serif;
+  font-weight: 900;
+  color: white;
+  //   }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fadeInAnimation ease 3s;
+}
+
+nav {
+  width: 100%;
+  // background: rgb(255,255,255);
+  // background: linear-gradient(339deg, rgba(255,255,255,1) 0%, rgba(255,202,212,1) 61%);
+
+  .name {
+    width: 100%;
+    color: white;
+    // background-color: #FFCAD4;
+    // font-size: 3rem;
+    font-size: 7vh;
+    text-align: center;
+    padding: 6vh 0;
+    font-weight: bold;
+  }
+}
+
+section.pic-bio {
+  justify-content: space-around;
+  margin-bottom: auto;
+  box-sizing: border-box;
+  //   width: 80%;
+  padding: 0 3vh;
+  //   opacity: 0;
+  img {
+    border-radius: 8px;
+    height: 25vh;
+    width: auto;
+    // margin-right: 8vw;
+  }
+  .bio {
+    height: 100%;
+    justify-content: space-between;
+    .age {
+      width: 100%;
+    }
+    p {
+      font-size: 3vh;
+      width: 100%;
+      text-align: left;
+    }
+  }
+}
+
+.video-container {
+  margin-bottom: auto;
+  border-radius: 8px;
+  //   margin: auto 0;
+  width: 90%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+banner.flex {
+  background-color: $lightblue;
+  //   width: 80vw;
+  padding: 4vh 2vh;
+  border-radius: 8px;
+  //   width: calc(80% - 2vh);
+  width: 80%;
+  font-size: 2.5vh;
+  margin-bottom: auto;
+}
+
+.soon {
+  width: 60%;
+  text-align: center;
+  margin: auto 0;
+  //   color: #2e294e;
+  p {
+    font-weight: 200;
+    width: 100%;
+  }
+}
+
+@media only screen and (width: 375px) {
+  section.pic-bio {
+    justify-content: space-between;
+    // img {
+    //   margin-right: 4vw;
+    // }
+  }
+}
