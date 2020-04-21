@@ -2,11 +2,9 @@ $lightblue: #6fb7ff;
 $purple: #b062ff;
 $background: #222222;
 body {
-  height: 100vh;
   //   height: 100%;
   //   p {
-  font-family: "palanquin", sans-serif;
-  font-weight: 900;
+  // font-weight: 900;
   color: white;
   //   }
 }
@@ -19,7 +17,9 @@ body {
     opacity: 1;
   }
 }
-
+page-content {
+  // height: 100%;
+}
 .fade {
   animation: fadeInAnimation ease 3s;
 }
@@ -90,7 +90,7 @@ section.pic-bio {
   height: 100%;
 }
 
-banner.flex {
+a.flex.fade {
   background-color: $lightblue;
   //   width: 80vw;
   padding: 4vh 2vh;
@@ -99,6 +99,11 @@ banner.flex {
   width: 80%;
   font-size: 2.5vh;
   margin-bottom: auto;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
 }
 
 .soon {

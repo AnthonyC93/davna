@@ -1,7 +1,4 @@
 body {
-  height: 100vh;
-  font-family: "palanquin", sans-serif;
-  font-weight: 900;
   color: white;
 }
 
@@ -74,13 +71,17 @@ section.pic-bio .bio p {
   height: 100%;
 }
 
-banner.flex {
+a.flex.fade {
   background-color: #6fb7ff;
   padding: 4vh 2vh;
   border-radius: 8px;
   width: 80%;
   font-size: 2.5vh;
   margin-bottom: auto;
+  text-decoration: none;
+}
+a.flex.fade:visited {
+  color: white;
 }
 
 .soon {
