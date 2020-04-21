@@ -38,18 +38,18 @@ nav .name {
 }
 
 section.pic-bio {
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: auto;
   box-sizing: border-box;
+  height: 25vh;
 }
 section.pic-bio img {
   border-radius: 1.5vh;
-  width: 45%;
+  height: 100%;
 }
 section.pic-bio .bio {
   height: 100%;
   justify-content: space-between;
-  margin: 0 auto;
 }
 section.pic-bio .bio .age {
   width: 100%;

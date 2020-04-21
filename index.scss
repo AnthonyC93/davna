@@ -49,22 +49,23 @@ nav {
 }
 
 section.pic-bio {
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: auto;
   box-sizing: border-box;
+  height: 25vh;
   //   width: 80%;
   // padding: 0 3vh;
   //   opacity: 0;
   img {
     border-radius: 1.5vh;
-    // height: 25vh;
-    width: 45%;
+    height: 100%;
+    // width: 45%;
     // margin-right: 8vw;
   }
   .bio {
     height: 100%;
     justify-content: space-between;
-    margin: 0 auto;
+    // margin: 0 auto;
     .age {
       width: 100%;
     }
@@ -109,9 +110,8 @@ a.flex.fade {
   font-size: 2.5vh;
   margin-bottom: auto;
   text-decoration: none;
-
-  &:visited {
-    color: white;
+  p {
+    color: white !important;
   }
 }
 
