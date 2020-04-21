@@ -1,12 +1,13 @@
 $lightblue: #6fb7ff;
 $purple: #b062ff;
 $background: #222222;
+* {
+  box-sizing: border-box;
+}
 body {
-  height: 100vh;
   //   height: 100%;
   //   p {
-  font-family: "palanquin", sans-serif;
-  font-weight: 900;
+  // font-weight: 900;
   color: white;
   //   }
 }
@@ -19,7 +20,11 @@ body {
     opacity: 1;
   }
 }
-
+page-content {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  padding: 4vh;
+}
 .fade {
   animation: fadeInAnimation ease 3s;
 }
@@ -34,34 +39,37 @@ nav {
     color: white;
     // background-color: #FFCAD4;
     // font-size: 3rem;
-    font-size: 7vh;
+    font-size: 6vh;
     text-align: center;
-    padding: 6vh 0;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+
     font-weight: bold;
   }
 }
 
 section.pic-bio {
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: auto;
   box-sizing: border-box;
   //   width: 80%;
-  padding: 0 3vh;
+  // padding: 0 3vh;
   //   opacity: 0;
   img {
-    border-radius: 8px;
-    height: 25vh;
-    width: auto;
+    border-radius: 1.5vh;
+    // height: 25vh;
+    width: 45%;
     // margin-right: 8vw;
   }
   .bio {
     height: 100%;
     justify-content: space-between;
+    margin: 0 auto;
     .age {
       width: 100%;
     }
     p {
-      font-size: 3vh;
+      font-size: 2.5vh;
       width: 100%;
       text-align: left;
     }
@@ -70,13 +78,14 @@ section.pic-bio {
 
 .video-container {
   margin-bottom: auto;
-  border-radius: 8px;
+  border-radius: 1.5vh;
   //   margin: auto 0;
-  width: 90%;
+  width: 100%;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
+  // min-height: 30%;
   overflow: hidden;
 }
 
@@ -90,21 +99,25 @@ section.pic-bio {
   height: 100%;
 }
 
-banner.flex {
+a.flex.fade {
   background-color: $lightblue;
   //   width: 80vw;
   padding: 4vh 2vh;
-  border-radius: 8px;
+  border-radius: 1.5vh;
   //   width: calc(80% - 2vh);
-  width: 80%;
+  width: 100%;
   font-size: 2.5vh;
   margin-bottom: auto;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
 }
 
 .soon {
   width: 60%;
   text-align: center;
-  margin: auto 0;
   //   color: #2e294e;
   p {
     font-weight: 200;

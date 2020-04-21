@@ -10,49 +10,55 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
 
-  <body class="flex column">
-    <nav class="flex row fade">
-      <h1 class="name">Davna Ceron</h1>
-    </nav>
-    <section class="pic-bio flex row fade">
-      <img
-        src="./assets/images/davna-headshot.jpg"
-        alt="Davna Ceron Headshot"
-      />
-      <div class="flex column bio">
-        <div class="flex column age">
-          <p>10 years old</p>
-          <p class="light">Feb 12 2010</p>
+  <body>
+    <page-content class="page-content flex column">
+      <nav class="flex row fade">
+        <h1 class="name">Davna Ceron</h1>
+      </nav>
+      <section class="pic-bio flex row fade">
+        <img
+          src="./assets/images/davna-headshot.jpg"
+          alt="Davna Ceron Headshot"
+        />
+        <div class="flex column bio">
+          <div class="flex column age">
+            <p>10 years old</p>
+            <p class="light">Feb 12, 2010</p>
+          </div>
+          <p>Height: &nbsp; <span class="light">5'4"</span></p>
+          <p>Weight: &nbsp;<span class="light">78 lbs</span></p>
+          <p>Eyes: &nbsp;<span class="light">Brown</span></p>
+          <p>Hair: &nbsp;<span class="light">Brown</span></p>
         </div>
-        <p>Height: 5'4"</p>
-        <p>Weight: 78 lbs</p>
-        <p>Eyes: Brown</p>
-        <p>Hair: Brown</p>
+      </section>
+
+      <div class="video-container fade">
+        <iframe
+          width="853"
+          height="480"
+          src="https://www.youtube.com/embed/RWli6jI3U5s?autoplay=0&controls=0"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
       </div>
-    </section>
 
-    <div class="video-container fade">
-      <iframe
-        width="853"
-        height="480"
-        src="https://www.youtube.com/embed/RWli6jI3U5s?autoplay=1&controls=0"
-        frameborder="0"
-        allowfullscreen
+      <a
+        class="flex row fade"
+        href="https://www.youtube.com/watch?v=1S5__tCmkN8&list=UU24B-ZFw98gDayyqKAud_Mw"
       >
-      </iframe>
-    </div>
+        <p>See more of my videos</p>
+        <img src="./assets/icons/right-arrow.svg" />
+      </a>
 
-    <banner class="flex row fade">
-      <p>See more of my videos</p>
-      <img src="./assets/icons/right-arrow.svg" />
-    </banner>
-
-    <p class="soon extra-light fade">Website Coming Soon</p>
+      <p class="soon extra-light fade">Website Coming Soon</p>
+    </page-content>
     <div class="background">
       <span></span> <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
+    <script src="./general.js"></script>
   </body>
 </html>

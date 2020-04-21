@@ -1,7 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  height: 100vh;
-  font-family: "palanquin", sans-serif;
-  font-weight: 900;
   color: white;
 }
 
@@ -13,6 +14,12 @@ body {
     opacity: 1;
   }
 }
+page-content {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  padding: 4vh;
+}
+
 .fade {
   animation: fadeInAnimation ease 3s;
 }
@@ -23,40 +30,40 @@ nav {
 nav .name {
   width: 100%;
   color: white;
-  font-size: 7vh;
+  font-size: 6vh;
   text-align: center;
-  padding: 6vh 0;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
   font-weight: bold;
 }
 
 section.pic-bio {
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: auto;
   box-sizing: border-box;
-  padding: 0 3vh;
 }
 section.pic-bio img {
-  border-radius: 8px;
-  height: 25vh;
-  width: auto;
+  border-radius: 1.5vh;
+  width: 45%;
 }
 section.pic-bio .bio {
   height: 100%;
   justify-content: space-between;
+  margin: 0 auto;
 }
 section.pic-bio .bio .age {
   width: 100%;
 }
 section.pic-bio .bio p {
-  font-size: 3vh;
+  font-size: 2.5vh;
   width: 100%;
   text-align: left;
 }
 
 .video-container {
   margin-bottom: auto;
-  border-radius: 8px;
-  width: 90%;
+  border-radius: 1.5vh;
+  width: 100%;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -74,19 +81,22 @@ section.pic-bio .bio p {
   height: 100%;
 }
 
-banner.flex {
+a.flex.fade {
   background-color: #6fb7ff;
   padding: 4vh 2vh;
-  border-radius: 8px;
-  width: 80%;
+  border-radius: 1.5vh;
+  width: 100%;
   font-size: 2.5vh;
   margin-bottom: auto;
+  text-decoration: none;
+}
+a.flex.fade:visited {
+  color: white;
 }
 
 .soon {
   width: 60%;
   text-align: center;
-  margin: auto 0;
 }
 .soon p {
   font-weight: 200;
