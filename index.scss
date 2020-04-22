@@ -61,28 +61,34 @@ section.pic-bio {
   //   width: 80%;
   // padding: 0 3vh;
   //   opacity: 0;
-  img {
-    border-radius: 1.5vh;
-    border-radius: calc(var(--vh, 1vh) * 1.5);
+  > div {
     height: 100%;
-    // width: 49%;
-    // margin-right: 8vw;
-  }
-  .bio {
-    height: 100%;
-    justify-content: space-between;
     width: 49%;
-    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    // margin: 0 auto;
-    .age {
-      width: 100%;
+    img {
+      border-radius: 1.5vh;
+      border-radius: calc(var(--vh, 1vh) * 1.5);
+      height: 100%;
+      // width: 49%;
+      // margin-right: 8vw;
     }
-    p {
-      font-size: 2.5vh;
-      font-size: calc(var(--vh, 1vh) * 2.5);
-      width: 100%;
-      text-align: left;
+    .bio {
+      height: 100%;
+      justify-content: space-between;
+      // padding-left: 10%;
+
+      .age {
+        width: 100%;
+      }
+      p {
+        font-size: 2.5vh;
+        font-size: calc(var(--vh, 1vh) * 2.5);
+        width: 100%;
+        text-align: left;
+      }
     }
   }
 }

@@ -48,21 +48,26 @@ section.pic-bio {
   height: 25vh;
   height: calc(var(--vh, 1vh) * 25);
 }
-section.pic-bio img {
+section.pic-bio > div {
+  height: 100%;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.pic-bio > div img {
   border-radius: 1.5vh;
   border-radius: calc(var(--vh, 1vh) * 1.5);
   height: 100%;
 }
-section.pic-bio .bio {
+section.pic-bio > div .bio {
   height: 100%;
   justify-content: space-between;
-  width: 49%;
-  padding-left: 10%;
 }
-section.pic-bio .bio .age {
+section.pic-bio > div .bio .age {
   width: 100%;
 }
-section.pic-bio .bio p {
+section.pic-bio > div .bio p {
   font-size: 2.5vh;
   font-size: calc(var(--vh, 1vh) * 2.5);
   width: 100%;
