@@ -46,6 +46,9 @@ page-content {
 
 nav {
   width: 100%;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
+
   // background: rgb(255,255,255);
   // background: linear-gradient(339deg, rgba(255,255,255,1) 0%, rgba(255,202,212,1) 61%);
 
@@ -57,9 +60,7 @@ nav {
     font-size: 6vh;
     // font-size: calc(var(--vh, 1vh) * 6);
     text-align: center;
-    margin-bottom: 5vh;
     // margin-bottom: calc(var(--vh, 1vh) * 5);
-    margin-top: 1vh;
     // margin-top: calc(var(--vh, 1vh));
 
     font-weight: bold;
@@ -86,9 +87,9 @@ section.pic-bio {
 
     img {
       border-radius: 1.5vh;
-      min-height: 25vh;
       // border-radius: calc(var(--vh, 1vh) * 1.5);
       height: 100%;
+      max-height: 25vh;
       // width: 49%;
       // margin-right: 8vw;
     }

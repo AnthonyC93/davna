@@ -36,14 +36,14 @@ page-content p.soon {
 
 nav {
   width: 100%;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
 }
 nav .name {
   width: 100%;
   color: white;
   font-size: 6vh;
   text-align: center;
-  margin-bottom: 5vh;
-  margin-top: 1vh;
   font-weight: bold;
 }
 
@@ -63,8 +63,8 @@ section.pic-bio > div {
 }
 section.pic-bio > div img {
   border-radius: 1.5vh;
-  min-height: 25vh;
   height: 100%;
+  max-height: 25vh;
 }
 section.pic-bio > div .bio {
   min-height: 25vh;
