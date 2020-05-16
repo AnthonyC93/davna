@@ -51,10 +51,11 @@ section.pic-bio {
   justify-content: space-around;
   margin-bottom: auto;
   box-sizing: border-box;
-  height: 25vh;
+  min-height: 25vh;
 }
 section.pic-bio > div {
   height: 100%;
+  min-height: 25vh;
   width: 49%;
   display: flex;
   justify-content: center;
@@ -62,9 +63,11 @@ section.pic-bio > div {
 }
 section.pic-bio > div img {
   border-radius: 1.5vh;
+  min-height: 25vh;
   height: 100%;
 }
 section.pic-bio > div .bio {
+  min-height: 25vh;
   height: 100%;
   justify-content: space-between;
 }
@@ -100,7 +103,7 @@ section.pic-bio > div .bio p {
 
 a.flex.fade {
   background-color: #6fb7ff;
-  padding: 3vh;
+  padding: 4vh 3vh;
   border-radius: 1.5vh;
   width: 100%;
   font-size: 2.5vh;
