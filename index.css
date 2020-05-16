@@ -16,7 +16,6 @@ body {
 }
 page-content {
   flex-wrap: nowrap !important;
-  height: 100vh;
   padding: 4vh;
 }
 page-content section.pic-bio {

@@ -36,6 +36,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   font-family: "palanquin-medium", sans-serif;
+  height: calc(100% + 400px);
   /* font-weight: ; */
   /* background: rgb(255,255,255);
   background: linear-gradient(339deg, rgba(255,255,255,1) 0%, rgba(255,202,212,1) 61%); */
