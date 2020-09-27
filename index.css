@@ -15,22 +15,69 @@ body {
   }
 }
 page-content {
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important;
   padding: 4vh;
 }
-page-content section.pic-bio {
+page-content section.pic-bio,
+page-content section.videos {
   margin-bottom: 5vh;
 }
-page-content div.video-container,
-page-content a.flex.row.fade {
-  margin-bottom: 3vh;
+page-content section.pic-bio {
+  justify-content: space-around;
+  margin-bottom: auto;
+  box-sizing: border-box;
+  min-height: 25vh;
+}
+page-content section.pic-bio > div {
+  height: 100%;
+  min-height: 25vh;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+page-content section.pic-bio > div img {
+  border-radius: 1.5vh;
+  height: 100%;
+  max-height: 25vh;
+}
+page-content section.pic-bio > div .bio {
+  min-height: 25vh;
+  height: 100%;
+  justify-content: space-between;
+}
+page-content section.pic-bio > div .bio .age {
+  width: 100%;
+}
+page-content section.pic-bio > div .bio p {
+  font-size: 2.5vh;
+  width: 100%;
+  text-align: left;
+}
+page-content section.videos {
+  width: 100%;
+}
+page-content section.videos .video-container {
+  margin-bottom: auto;
+  border-radius: 0.5vh;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+page-content section.videos .video-container iframe,
+page-content section.videos .video-container object,
+page-content section.videos .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 page-content p.soon {
   margin-bottom: 200px;
-}
-
-.fade {
-  animation: fadeInAnimation ease 3s;
 }
 
 nav {
@@ -46,67 +93,12 @@ nav .name {
   font-weight: bold;
 }
 
-section.pic-bio {
-  justify-content: space-around;
-  margin-bottom: auto;
-  box-sizing: border-box;
-  min-height: 25vh;
-}
-section.pic-bio > div {
-  height: 100%;
-  min-height: 25vh;
-  width: 49%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section.pic-bio > div img {
-  border-radius: 1.5vh;
-  height: 100%;
-  max-height: 25vh;
-}
-section.pic-bio > div .bio {
-  min-height: 25vh;
-  height: 100%;
-  justify-content: space-between;
-}
-section.pic-bio > div .bio .age {
-  width: 100%;
-}
-section.pic-bio > div .bio p {
-  font-size: 2.5vh;
-  width: 100%;
-  text-align: left;
-}
-
-.video-container {
-  margin-bottom: auto;
-  border-radius: 1.5vh;
-  width: 100%;
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 a.flex.fade {
   background-color: #6fb7ff;
   padding: 4vh 3vh;
   border-radius: 1.5vh;
   width: 100%;
   font-size: 2.5vh;
-  margin-bottom: auto;
   text-decoration: none;
 }
 a.flex.fade p {
@@ -117,10 +109,15 @@ a.flex.fade p {
 .soon {
   width: 60%;
   text-align: center;
-}
-.soon p {
+  font-size: 2vh;
   font-weight: 200;
   width: 100%;
+}
+
+#loader {
+  display: block;
+  margin: auto;
+  width: 35vh;
 }
 
 @media only screen and (width: 375px) {
