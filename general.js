@@ -19,13 +19,16 @@ function getVideos() {
   const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&part=snippet&playlistId=${playlistId}&key=${key}&maxResults=${limit}`;
   fetch(url)
     .then((data) => {
-      if (data.ok == true) {
-        console.log("data is ok", data.ok);
-        let videos = data.json().items;
+      return data.json();
+    })
+    .then((data) => {
+      console.log("data", data);
+      if (data["error"]) throw data["error"];
+      let videos = data["items"];
+      if (videos.length > 0) {
         displayVideos(videos);
       } else {
-        console.log("data is NOT ok", data.ok);
-        throw data;
+        useFallbacks();
       }
     })
     .catch((error) => {
