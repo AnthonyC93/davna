@@ -15,11 +15,11 @@ function clearVideoContainer() {
 function getVideos() {
   const limit = 25;
   const playlistId = "UUgzt1OTiHXn7R75zRsAHdLg";
-  const key = "AIzaSyBYsepI94PY97zc30fuDdUJ4p-qFUE2oSw";
+  const key = "AIzaSyASyctHamLwAUhnkRI4AsqRF2P5EVATZbE";
   const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&part=snippet&playlistId=${playlistId}&key=${key}&maxResults=${limit}`;
   fetch(url)
     .then((data) => {
-      if (data.ok) {
+      if (data.ok == true) {
         console.log("data is ok", data.ok);
         let videos = data.json().items;
         displayVideos(videos);
