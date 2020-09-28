@@ -87,6 +87,7 @@ body {
   top: 0;
   left: 0;
   background: #222222;
+  /* background: #5c5c5c; */
   overflow: hidden;
   z-index: -10;
 }
