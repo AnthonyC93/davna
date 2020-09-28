@@ -132,6 +132,9 @@ a.flex.fade p {
   section.pic-bio {
     justify-content: space-between;
   }
+  section.pic-bio > div {
+    width: 47%;
+  }
 }
 @media only screen and (min-width: 1025px) {
   page-content {
@@ -180,6 +183,7 @@ a.flex.fade p {
     display: none;
   }
   page-content .name {
+    padding-left: 10%;
     text-align: left;
   }
 }
