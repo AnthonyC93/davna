@@ -59,11 +59,10 @@ body {
 }
 
 .mb {
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
 }
 
 .column {
-  /* height: 100%; */
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;

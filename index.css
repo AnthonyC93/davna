@@ -15,6 +15,11 @@ body {
   }
 }
 page-content {
+  display: flex;
+  /* height: 100%; */
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap !important;
   padding: 4vh;
 }
@@ -23,8 +28,12 @@ page-content section.videos {
   margin-bottom: 5vh;
 }
 page-content section.pic-bio {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
   justify-content: space-around;
-  margin-bottom: auto;
   box-sizing: border-box;
   min-height: 25vh;
 }
@@ -58,7 +67,6 @@ page-content section.videos {
   width: 100%;
 }
 page-content section.videos .video-container {
-  margin-bottom: auto;
   border-radius: 0.5vh;
   width: 100%;
   position: relative;
@@ -123,6 +131,56 @@ a.flex.fade p {
 @media only screen and (width: 375px) {
   section.pic-bio {
     justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  page-content {
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  page-content section.pic-bio {
+    width: 29%;
+  }
+  page-content section.pic-bio > div {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+  page-content section.pic-bio > div:last-child {
+    margin-top: 3vh;
+  }
+  page-content section.videos {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+  page-content section.videos .video-container {
+    width: 48%;
+    padding-bottom: 20%;
+  }
+  page-content section.videos .video-container.e1 {
+    width: 100%;
+    padding-bottom: 50%;
+  }
+  page-content section.videos .video-container.e2 {
+    padding-bottom: 50%;
+  }
+  page-content a.flex.fade {
+    text-align: center;
+  }
+  page-content a.flex.fade p {
+    width: 100%;
+  }
+  page-content a.flex.fade img {
+    display: none;
+  }
+  page-content .name {
+    text-align: left;
   }
 }
 

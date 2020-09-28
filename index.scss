@@ -1,3 +1,5 @@
+@use './layout.scss';
+
 $lightblue: #6fb7ff;
 $purple: #b062ff;
 $background: #222222;
@@ -16,7 +18,10 @@ body {
     opacity: 1;
   }
 }
+
 page-content {
+  @include layout.flex;
+  @include layout.column;
   flex-wrap: wrap !important;
   // height: 100vh;
   // height: calc(var(--vh, 1vh) * 100);
@@ -29,8 +34,10 @@ page-content {
   }
 
   section.pic-bio {
+    @include layout.flex;
+    @include layout.row;
     justify-content: space-around;
-    margin-bottom: auto;
+    // margin-bottom: auto;
     box-sizing: border-box;
     // height: 25vh;
     min-height: 25vh;
@@ -77,7 +84,7 @@ page-content {
     width: 100%;
 
     .video-container {
-      margin-bottom: auto;
+      // margin-bottom: auto;
       border-radius: 0.5vh;
       // border-radius: calc(var(--vh, 1vh) * 1.5);
       //   margin: auto 0;
@@ -156,5 +163,51 @@ a.flex.fade {
 @media only screen and (width: 375px) {
   section.pic-bio {
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  page-content {
+    @include layout.row;
+
+    section.pic-bio {
+      width: 29%;
+      > div {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 10%;
+        &:last-child {
+          margin-top: 3vh;
+        }
+      }
+    }
+    section.videos {
+      @include layout.flex;
+      @include layout.row;
+      width: 70%;
+      .video-container {
+        width: 48%;
+        padding-bottom: 20%;
+        &.e1 {
+          width: 100%;
+          padding-bottom: 50%;
+        }
+        &.e2 {
+          padding-bottom: 50%;
+        }
+      }
+    }
+    a.flex.fade {
+      text-align: center;
+      p {
+        width: 100%;
+      }
+      img {
+        display: none;
+      }
+    }
+    .name {
+      text-align: left;
+    }
   }
 }
