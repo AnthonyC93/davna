@@ -103,10 +103,6 @@ page-content {
       height: 100%;
     }
   }
-
-  p.soon {
-    margin-bottom: 200px;
-  }
 }
 .fade {
   // animation: fadeInAnimation ease 1.5s;
@@ -147,6 +143,7 @@ a.flex.fade {
   font-size: 2vh;
   font-weight: 200;
   width: 100%;
+  margin: 50vh 0;
 }
 
 #loader {
@@ -179,6 +176,7 @@ a.flex.fade {
         max-height: 35vh;
       }
       width: 29%;
+      margin-bottom: auto;
 
       .info-visit {
         > div {
@@ -198,10 +196,15 @@ a.flex.fade {
       @include layout.flex;
       @include layout.row;
       width: 70%;
-      padding: 0 3vw;
+      padding: 0 10vw;
       .video-container {
         width: 48%;
         padding-bottom: 20%;
+        &.first {
+          width: 100%;
+          padding-bottom: 56.25%;
+          margin-bottom: 2vw;
+        }
         &.e1 {
           width: 100%;
           padding-bottom: 50%;
@@ -215,6 +218,7 @@ a.flex.fade {
       display: none;
     }
     #small-visit {
+      margin-top: 2vw;
       text-align: center;
       padding: 0.5vh;
       p {
@@ -222,7 +226,7 @@ a.flex.fade {
       }
     }
     .soon {
-      margin: 10vw 0;
+      margin: 25vw 0;
     }
   }
 }
