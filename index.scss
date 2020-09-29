@@ -48,6 +48,9 @@ page-content {
     // justify-content: space-around;
     box-sizing: border-box;
     min-height: 75vh;
+    // background: rgba( 0, 0, 0, 0.8 );
+    border-radius: 8px;
+    padding: 2vw;
 
     .bio {
       margin-bottom: auto;
@@ -55,6 +58,15 @@ page-content {
     }
 
     .info-row > div:first-child {
+      align-items: flex-start;
+    }
+
+    .info-row {
+      // justify-content: center;
+      margin: 14vw 0;
+      align-items: flex-start;
+    }
+    .h-w {
       align-items: flex-start;
     }
 
@@ -100,20 +112,19 @@ page-content {
   // animation: fadeInAnimation ease 1.5s;
 }
 
-nav {
+// nav {
+//   width: 100%;
+//   margin-bottom: 5vh;
+//   margin-top: 1vh;
+
+.name {
   width: 100%;
-  margin-bottom: 5vh;
-  margin-top: 1vh;
-
-  .name {
-    width: 100%;
-    color: white;
-    font-size: 6vh;
-    text-align: center;
-
-    font-weight: bold;
-  }
+  color: white;
+  font-size: 6vh;
+  text-align: center;
+  font-weight: bold;
 }
+// }
 
 a.flex.fade {
   background-color: $lightblue;
@@ -149,19 +160,37 @@ a.flex.fade {
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 1024px) {
+  #small-visit {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 1025px) {
   page-content {
     @include layout.row;
 
     section.pic-bio {
+      background: rgba(255, 255, 255, 0.15);
+      // background: rgba( 0, 0, 0, 0.8 );
+      border-radius: 8px;
+      padding: 2vw;
+      img {
+        max-height: 35vh;
+      }
       width: 29%;
-      > div {
-        width: 100%;
-        justify-content: flex-start;
-        padding-left: 10%;
-        &:last-child {
-          margin-top: 3vh;
+
+      .info-visit {
+        > div {
+          // width: 60%;
+          // justify-content: flex-start;
+          &:last-child {
+            margin-top: 3vh;
+          }
+        }
+        .info-row {
+          // justify-content: center;
+          margin: 1vw 0;
         }
       }
     }
@@ -169,6 +198,7 @@ a.flex.fade {
       @include layout.flex;
       @include layout.row;
       width: 70%;
+      padding: 0 3vw;
       .video-container {
         width: 48%;
         padding-bottom: 20%;
@@ -181,18 +211,18 @@ a.flex.fade {
         }
       }
     }
-    a.flex.fade {
+    #large-visit {
+      display: none;
+    }
+    #small-visit {
       text-align: center;
+      padding: 0.5vh;
       p {
         width: 100%;
       }
-      img {
-        display: none;
-      }
     }
-    .name {
-      padding-left: 10%;
-      text-align: left;
+    .soon {
+      margin: 10vw 0;
     }
   }
 }

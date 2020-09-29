@@ -4,7 +4,7 @@
 // document.documentElement.style.setProperty("--vh", `${vh}px`);
 // console.log("current vh is: ", vh);
 
-const fallback = ["K5gE2m1Svtw", "nu5qOYcrF4I", "2zhhollb_ec", "RWli6jI3U5s"];
+const fallback = ["K5gE2m1Svtw", "nu5qOYcrF4I", "2zhhollb_ec"];
 const loader = document.getElementById("loader");
 const videoSection = document.getElementById("videos");
 
@@ -77,4 +77,4 @@ function addVideo(id, addClass) {
   videoSection.appendChild(videoContainer);
 }
 
-// getVideos();
+getVideos();

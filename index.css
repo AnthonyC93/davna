@@ -40,12 +40,21 @@ page-content section.pic-bio {
   justify-content: space-between;
   box-sizing: border-box;
   min-height: 75vh;
+  border-radius: 8px;
+  padding: 2vw;
 }
 page-content section.pic-bio .bio {
   margin-bottom: auto;
   margin-top: auto;
 }
 page-content section.pic-bio .info-row > div:first-child {
+  align-items: flex-start;
+}
+page-content section.pic-bio .info-row {
+  margin: 14vw 0;
+  align-items: flex-start;
+}
+page-content section.pic-bio .h-w {
   align-items: flex-start;
 }
 page-content section.pic-bio p {
@@ -77,12 +86,7 @@ page-content p.soon {
   margin-bottom: 200px;
 }
 
-nav {
-  width: 100%;
-  margin-bottom: 5vh;
-  margin-top: 1vh;
-}
-nav .name {
+.name {
   width: 100%;
   color: white;
   font-size: 6vh;
@@ -122,6 +126,11 @@ a.flex.fade p {
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 1024px) {
+  #small-visit {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1025px) {
   page-content {
     width: 100%;
@@ -130,15 +139,19 @@ a.flex.fade p {
     justify-content: space-between;
   }
   page-content section.pic-bio {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 2vw;
     width: 29%;
   }
-  page-content section.pic-bio > div {
-    width: 100%;
-    justify-content: flex-start;
-    padding-left: 10%;
+  page-content section.pic-bio img {
+    max-height: 35vh;
   }
-  page-content section.pic-bio > div:last-child {
+  page-content section.pic-bio .info-visit > div:last-child {
     margin-top: 3vh;
+  }
+  page-content section.pic-bio .info-visit .info-row {
+    margin: 1vw 0;
   }
   page-content section.videos {
     display: flex;
@@ -147,6 +160,7 @@ a.flex.fade p {
     align-items: center;
     justify-content: space-between;
     width: 70%;
+    padding: 0 3vw;
   }
   page-content section.videos .video-container {
     width: 48%;
@@ -159,18 +173,18 @@ a.flex.fade p {
   page-content section.videos .video-container.e2 {
     padding-bottom: 50%;
   }
-  page-content a.flex.fade {
-    text-align: center;
-  }
-  page-content a.flex.fade p {
-    width: 100%;
-  }
-  page-content a.flex.fade img {
+  page-content #large-visit {
     display: none;
   }
-  page-content .name {
-    padding-left: 10%;
-    text-align: left;
+  page-content #small-visit {
+    text-align: center;
+    padding: 0.5vh;
+  }
+  page-content #small-visit p {
+    width: 100%;
+  }
+  page-content .soon {
+    margin: 10vw 0;
   }
 }
 
